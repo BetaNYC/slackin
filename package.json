@@ -43,7 +43,7 @@
         "supertest": "0.15.0"
     },
     "engines": {
-        "node": "6.11.1"
+        "node": "18.12.1"
     },
     "bin": {
         "slackin": "./bin/slackin"
@@ -74,5 +74,8 @@
             "GOOGLE_CAPTCHA_SECRET",
             "GOOGLE_CAPTCHA_SITEKEY"
         ]
+    },
+    "overrides": {
+        "graceful-fs": "^4.2.10"
     }
 }
