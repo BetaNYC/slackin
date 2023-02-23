@@ -1,4 +1,4 @@
-FROM node:slim
+FROM node:16-alpine
 
 ENV PORT 3000
 
@@ -6,7 +6,7 @@ ADD . /srv/www
 
 WORKDIR /srv/www
 
-RUN npm install --unsafe-perm
+RUN yarn
 
 EXPOSE 3000
 
