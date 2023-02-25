@@ -47,7 +47,7 @@ if (!org || !token || !gcaptcha_sitekey || !gcaptcha_secret) {
 var port = flags.port
 var hostname = flags.hostname
 
-slackin(flags).listen(port, hostname, function (err) {
+slackin(flags).listen(port, function (err) {
   if (err) throw err
-  if (!flags.silent) console.log('%s – listening on %s:%d', new Date, hostname, port)
+  if (!flags.silent) console.log('%s - listening on %s:%d', new Date, hostname, port)
 })
